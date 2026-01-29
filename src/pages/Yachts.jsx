@@ -388,7 +388,7 @@ const Yachts = () => {
             NORSEMAN FLEET
           </h1>
           <p className="font-inter text-slate-200/80 max-w-2xl mx-auto">
-            M12, A520 and SL950 form the inaugural Norseman fleet – covering polar expeditions, coastal
+            M12, A520 and SL950 form the inaugural Norseman fleet – covering Alaska expeditions, coastal
             adventure cruising and super long‑range blue‑water passages.
           </p>
         </motion.div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FiAnchor } from 'react-icons/fi';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
+
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,19 +31,14 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center space-x-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-full border border-ocean-gold/40 bg-white/5">
-              <FiAnchor className="text-ocean-gold text-xl" />
-            </div>
-            <div className="flex flex-col leading-tight">
-              <span className="font-playfair text-xl lg:text-2xl font-bold tracking-[0.18em] uppercase">
-                NORSEMAN
-              </span>
-              <span className="font-inter text-[11px] tracking-[0.32em] uppercase text-ocean-gold/90">
-                YACHTS
-              </span>
-            </div>
+          <NavLink to="/" className="flex items-center">
+            <img
+              src={`${process.env.PUBLIC_URL}/Assets/Branding/gold logo.PNG`}
+              alt="Norseman Yachts logo"
+              className="h-9 lg:h-10 w-auto"
+            />
           </NavLink>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-10">
