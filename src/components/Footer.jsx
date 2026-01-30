@@ -106,8 +106,8 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-inter text-slate-400">
           <p>© {currentYear} Norseman Yachts. All rights reserved.</p>
           <div className="flex space-x-6">
-            <button className="hover:text-ocean-gold transition-colors">Privacy Policy</button>
-            <button className="hover:text-ocean-gold transition-colors">Terms of Use</button>
+            <Link to="/privacy-policy" className="hover:text-ocean-gold transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-use" className="hover:text-ocean-gold transition-colors">Terms of Use</Link>
           </div>
         </div>
       </div>
