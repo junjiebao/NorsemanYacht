@@ -11,12 +11,17 @@ const Home = () => {
     <div className="min-h-screen bg-ocean-navy">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-ocean-navy">
-        {/* Background with gradient - no external image to avoid loading delay */}
+        {/* Background image */}
         <div className="absolute inset-0 ocean-hero-bg">
-          {/* Animated gradient background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-ocean-navy via-[#1a2942] to-[#0a1628]" />
+          <img
+            src={`${process.env.PUBLIC_URL}/Assets/Yachts/SL950/side view.PNG`}
+            alt="Norseman SL950 silhouette"
+            className="absolute inset-0 w-full h-full object-cover opacity-35"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-ocean-navy/70 via-[#1a2942]/60 to-[#0a1628]/70" />
           <div className="absolute inset-0 ocean-hero-sparkle" />
         </div>
+
 
 
         {/* Content */}
