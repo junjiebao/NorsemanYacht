@@ -3,15 +3,15 @@ import { motion } from 'framer-motion';
 import { Calendar, MapPin } from 'react-feather';
 
 const events = [
-  {
-    id: 1,
-    title: 'Monaco Yacht Show',
-    date: '2024-09-25',
-    location: 'Monaco',
-    description: 'World premiere of the Norseman M12 with expedition captains sharing high‑latitude stories.',
-    type: 'Exhibition',
-    status: 'Upcoming',
-  },
+  // {
+  //   id: 1,
+  //   title: 'Monaco Yacht Show',
+  //   date: '2024-09-25',
+  //   location: 'Monaco',
+  //   description: 'World premiere of the Norseman M12 with expedition captains sharing high‑latitude stories.',
+  //   type: 'Exhibition',
+  //   status: 'Upcoming',
+  // },
   {
     id: 2,
     title: 'Arctic Exploration Forum',

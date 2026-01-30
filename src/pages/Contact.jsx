@@ -217,7 +217,6 @@ const Contact = () => {
                     } rounded-none font-inter focus:outline-none focus:border-amber-100 bg-white`}
                   >
                     <option value="">Please select</option>
-                    <option value="m12">M12 Expedition Series</option>
                     <option value="a520">A520 Alaska Series</option>
                     <option value="sl950">SL950 Long‑range Series</option>
                     <option value="custom">Full Custom Project</option>

@@ -100,9 +100,14 @@ input, textarea, select {
 }
 
 /* Hero ocean background animation */
+.ocean-hero-bg {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
 .ocean-hero-bg img {
   animation: oceanDrift 18s ease-in-out infinite alternate;
   transform-origin: center center;
+  will-change: transform;
 }
 
 @keyframes oceanDrift {

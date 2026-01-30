@@ -13,13 +13,13 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-ocean-navy">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-ocean-navy">
         {/* Background image + gradient overlay with subtle water animation */}
         <div className="absolute inset-0 overflow-hidden ocean-hero-bg">
-          {/* Loading placeholder */}
-          {!heroImageLoaded && (
-            <div className="absolute inset-0 bg-ocean-navy animate-pulse" />
-          )}
+          {/* Always show background color */}
+          <div className="absolute inset-0 bg-ocean-navy" />
+          
+          {/* Hero image with fallback */}
           <img
             src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=70"
             srcSet="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=60 800w,
@@ -27,9 +27,12 @@ const Home = () => {
                     https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=80 2000w"
             sizes="100vw"
             alt="Yacht from above"
-            className="w-full h-full object-cover"
+            className={`w-full h-full object-cover transition-opacity duration-700 ${
+              heroImageLoaded ? 'opacity-100' : 'opacity-0'
+            }`}
             loading="eager"
             onLoad={() => setHeroImageLoaded(true)}
+            onError={() => setHeroImageLoaded(true)}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-ocean-navy/85 via-ocean-navy/70 to-ocean-navy/95" />
           <div className="absolute inset-0 ocean-hero-sparkle" />
