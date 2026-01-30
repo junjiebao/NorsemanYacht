@@ -1,19 +1,35 @@
 
+
+
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'react-feather';
+import { useState } from 'react';
 
 const Home = () => {
+  const [heroImageLoaded, setHeroImageLoaded] = useState(false);
+  const [interiorImageLoaded, setInteriorImageLoaded] = useState(false);
+
   return (
     <div className="min-h-screen bg-ocean-navy">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background image + gradient overlay with subtle water animation */}
         <div className="absolute inset-0 overflow-hidden ocean-hero-bg">
+          {/* Loading placeholder */}
+          {!heroImageLoaded && (
+            <div className="absolute inset-0 bg-ocean-navy animate-pulse" />
+          )}
           <img
-            src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=80"
+            src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=70"
+            srcSet="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=60 800w,
+                    https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=70 1200w,
+                    https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=80 2000w"
+            sizes="100vw"
             alt="Yacht from above"
             className="w-full h-full object-cover"
+            loading="eager"
+            onLoad={() => setHeroImageLoaded(true)}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-ocean-navy/85 via-ocean-navy/70 to-ocean-navy/95" />
           <div className="absolute inset-0 ocean-hero-sparkle" />
@@ -127,10 +143,16 @@ const Home = () => {
             {/* Image panel */}
             <div className="lg:w-1/2">
               <div className="relative w-full h-[320px] md:h-[380px] lg:h-[420px] overflow-hidden rounded-3xl shadow-2xl">
+                {/* Loading placeholder */}
+                {!interiorImageLoaded && (
+                  <div className="absolute inset-0 bg-ocean-navy-soft animate-pulse" />
+                )}
                 <img
                   src={`${process.env.PUBLIC_URL}/Assets/Yachts/SL950/far dock view.PNG`}
                   alt="Yacht interior"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  onLoad={() => setInteriorImageLoaded(true)}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ocean-navy-soft/40 via-transparent to-transparent" />
               </div>

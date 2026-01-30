@@ -4,30 +4,30 @@ import { ExternalLink, Maximize2, Navigation } from 'react-feather';
 import { FaUsers } from 'react-icons/fa';
 
 const yachts = [
-  {
-    id: 1,
-    code: 'M12',
-    name: 'NORSEMAN M12',
-    series: 'Near‑shore Family Cruiser',
-    length: '12 m / 39 ft',
-    description:
-      'A 12‑metre coastal leisure yacht created for family life and relaxed weekend escapes. Currently under development, M12 explores a hybrid concept: silent electric drive for slow, quiet cruising, with an auxiliary outboard petrol engine available whenever higher speed is desired.',
-    image: `${process.env.PUBLIC_URL}/Assets/Yachts/M12/M12 Profile-2A 20260120.png`,
-    specs: {
-      length: '12 m / 39 ft',
-      guests: 'Family‑focused cockpit and saloon for long weekends',
-      range: 'Near‑shore and coastal cruising',
-      displacement: 'TBD',
-      engine:
-        'In development: hybrid concept with electric drive for quiet cruising and auxiliary outboard petrol engine for higher speed.',
-    },
-    features: [
-      'Compact 12‑metre near‑shore family cruiser',
-      'Weekender layout focused on family life and social spaces',
-      'Planned hybrid concept with silent electric cruising mode',
-      'Outboard petrol engine for spirited runs when extra speed is needed',
-    ],
-  },
+  // {
+  //   id: 1,
+  //   code: 'M12',
+  //   name: 'NORSEMAN M12',
+  //   series: 'Near‑shore Family Cruiser',
+  //   length: '12 m / 39 ft',
+  //   description:
+  //     'A 12‑metre coastal leisure yacht created for family life and relaxed weekend escapes. Currently under development, M12 explores a hybrid concept: silent electric drive for slow, quiet cruising, with an auxiliary outboard petrol engine available whenever higher speed is desired.',
+  //   image: `${process.env.PUBLIC_URL}/Assets/Yachts/M12/M12 Profile-2A 20260120.png`,
+  //   specs: {
+  //     length: '12 m / 39 ft',
+  //     guests: 'Family‑focused cockpit and saloon for long weekends',
+  //     range: 'Near‑shore and coastal cruising',
+  //     displacement: 'TBD',
+  //     engine:
+  //       'In development: hybrid concept with electric drive for quiet cruising and auxiliary outboard petrol engine for higher speed.',
+  //   },
+  //   features: [
+  //     'Compact 12‑metre near‑shore family cruiser',
+  //     'Weekender layout focused on family life and social spaces',
+  //     'Planned hybrid concept with silent electric cruising mode',
+  //     'Outboard petrol engine for spirited runs when extra speed is needed',
+  //   ],
+  // },
   {
     id: 2,
     code: 'A520',
@@ -274,6 +274,7 @@ const Yachts = () => {
             src={images[activeM12Image]}
             alt={`${selectedYacht.name} view ${activeM12Image + 1}`}
             className="max-w-full max-h-[520px] object-contain"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ocean-navy/60 via-transparent to-transparent" />
 
@@ -308,6 +309,7 @@ const Yachts = () => {
             src={images[activeA520Image]}
             alt={`${selectedYacht.name} view ${activeA520Image + 1}`}
             className="max-w-full max-h-[520px] object-contain"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ocean-navy/60 via-transparent to-transparent" />
 
@@ -342,6 +344,7 @@ const Yachts = () => {
             src={images[activeSL950Image]}
             alt={`${selectedYacht.name} view ${activeSL950Image + 1}`}
             className="max-w-full max-h-[520px] object-contain"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ocean-navy/60 via-transparent to-transparent" />
 
@@ -369,6 +372,7 @@ const Yachts = () => {
           src={selectedYacht.image}
           alt={selectedYacht.name}
           className="w-full h-full object-cover"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ocean-navy/60 via-transparent to-transparent" />
       </div>
@@ -384,7 +388,7 @@ const Yachts = () => {
             NORSEMAN FLEET
           </h1>
           <p className="font-inter text-slate-200/80 max-w-2xl mx-auto">
-            M12, A520 and SL950 form the inaugural Norseman fleet – covering Alaska expeditions, coastal
+            A520 and SL950 form the inaugural Norseman fleet – covering Alaska expeditions, coastal
             adventure cruising and super long‑range blue‑water passages.
           </p>
         </div>
@@ -414,6 +418,7 @@ const Yachts = () => {
                       ? 'w-full h-auto object-contain transition-transform duration-500'
                       : 'w-full h-full object-cover group-hover:scale-110 transition-transform duration-500'
                   }
+                  loading={index < 2 ? 'eager' : 'lazy'}
                 />
                 <div className="absolute top-4 left-4 bg-ocean-navy text-slate-100 px-3 py-1 font-inter text-[11px] tracking-[0.22em] uppercase">
                   {yacht.code}
@@ -478,7 +483,6 @@ const Yachts = () => {
         {/* Selected Yacht Detail */}
         {selectedYacht && (
           <div className="mt-16 bg-ocean-navy text-slate-100 rounded-3xl overflow-hidden shadow-2xl">
-          >
             <div className="flex flex-col lg:flex-row">
               {/* Text side */}
               <div className="lg:w-1/2 p-8 md:p-10 lg:p-12">
