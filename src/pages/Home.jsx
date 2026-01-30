@@ -1,97 +1,54 @@
 
 
 
-import { motion } from 'framer-motion';
+
+
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'react-feather';
-import { useState } from 'react';
 
 const Home = () => {
-  const [heroImageLoaded, setHeroImageLoaded] = useState(false);
-  const [interiorImageLoaded, setInteriorImageLoaded] = useState(false);
-
   return (
     <div className="min-h-screen bg-ocean-navy">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-ocean-navy">
-        {/* Background image + gradient overlay with subtle water animation */}
-        <div className="absolute inset-0 overflow-hidden ocean-hero-bg">
-          {/* Always show background color */}
-          <div className="absolute inset-0 bg-ocean-navy" />
-          
-          {/* Hero image with fallback */}
-          <img
-            src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=70"
-            srcSet="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=60 800w,
-                    https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=70 1200w,
-                    https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2000&q=80 2000w"
-            sizes="100vw"
-            alt="Yacht from above"
-            className={`w-full h-full object-cover transition-opacity duration-700 ${
-              heroImageLoaded ? 'opacity-100' : 'opacity-0'
-            }`}
-            loading="eager"
-            onLoad={() => setHeroImageLoaded(true)}
-            onError={() => setHeroImageLoaded(true)}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-ocean-navy/85 via-ocean-navy/70 to-ocean-navy/95" />
+        {/* Background with gradient - no external image to avoid loading delay */}
+        <div className="absolute inset-0 ocean-hero-bg">
+          {/* Animated gradient background */}
+          <div className="absolute inset-0 bg-gradient-to-br from-ocean-navy via-[#1a2942] to-[#0a1628]" />
           <div className="absolute inset-0 ocean-hero-sparkle" />
         </div>
 
 
         {/* Content */}
         <div className="relative z-10 text-center px-4">
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="font-inter text-[11px] md:text-xs tracking-[0.35em] uppercase text-ocean-gold/80 mb-6"
-          >
+          <p className="font-inter text-[11px] md:text-xs tracking-[0.35em] uppercase text-ocean-gold/80 mb-6 animate-fade-in">
             redefining Yachting 
-          </motion.p>
+          </p>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.1 }}
-            className="font-playfair text-5xl md:text-7xl lg:text-[80px] font-bold text-white leading-tight mb-6"
-          >
+          <h1 className="font-playfair text-5xl md:text-7xl lg:text-[80px] font-bold text-white leading-tight mb-6 animate-fade-in-up">
             BEYOND THE <span className="text-ocean-gold italic">HORIZON</span>
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="font-inter text-base md:text-lg text-slate-100/80 max-w-2xl mx-auto mb-10"
-          >
+          <p className="font-inter text-base md:text-lg text-slate-100/80 max-w-2xl mx-auto mb-10 animate-fade-in-up animation-delay-200">
             Rooted in Alaska waters with contemporary design, NORSEMAN YACHTS creates yachts that turn every horizon into a livable frontier – from quiet inshore weekends with family to offshore passages and true long‑range exploration.
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          >
+          <div className="animate-fade-in animation-delay-300">
             <Link
               to="/yachts"
               className="inline-flex items-center gap-3 px-10 py-3 border border-white/40 bg-white/5 text-white font-inter text-[11px] md:text-xs tracking-[0.32em] uppercase hover:bg-white/10 hover:border-white/70 transition-colors"
             >
               DISCOVER FLEET <ArrowRight size={16} />
             </Link>
-          </motion.div>
+          </div>
         </div>
 
         {/* Scroll Indicator */}
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ repeat: Infinity, duration: 1.8 }}
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
-        >
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce-slow">
           <div className="w-7 h-11 border border-white/40 rounded-full flex justify-center items-start pt-1">
             <div className="w-1 h-3 bg-white/80 rounded-full" />
           </div>
-        </motion.div>
+        </div>
       </section>
 
       {/* Intro Section - The Art of Ocean Living */}
@@ -145,17 +102,12 @@ const Home = () => {
 
             {/* Image panel */}
             <div className="lg:w-1/2">
-              <div className="relative w-full h-[320px] md:h-[380px] lg:h-[420px] overflow-hidden rounded-3xl shadow-2xl">
-                {/* Loading placeholder */}
-                {!interiorImageLoaded && (
-                  <div className="absolute inset-0 bg-ocean-navy-soft animate-pulse" />
-                )}
+              <div className="relative w-full h-[320px] md:h-[380px] lg:h-[420px] overflow-hidden rounded-3xl shadow-2xl bg-ocean-navy-soft">
                 <img
                   src={`${process.env.PUBLIC_URL}/Assets/Yachts/SL950/far dock view.PNG`}
                   alt="Yacht interior"
                   className="w-full h-full object-cover"
                   loading="lazy"
-                  onLoad={() => setInteriorImageLoaded(true)}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ocean-navy-soft/40 via-transparent to-transparent" />
               </div>
