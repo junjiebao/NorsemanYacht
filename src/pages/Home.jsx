@@ -128,7 +128,7 @@ const Home = () => {
             <div className="lg:w-1/2">
               <div className="relative w-full h-[320px] md:h-[380px] lg:h-[420px] overflow-hidden rounded-3xl shadow-2xl">
                 <img
-                  src="Assets\Yachts\SL950\far dock view.PNG"
+                  src={`${process.env.PUBLIC_URL}/Assets/Yachts/SL950/far dock view.PNG`}
                   alt="Yacht interior"
                   className="w-full h-full object-cover"
                 />
