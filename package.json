@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "NORSEMAN YACHTS - 源自北欧的探险传奇",
   "private": true,
+  "homepage": "https://junjiebao.github.io/NorsemanYacht",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

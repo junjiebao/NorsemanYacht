@@ -12,7 +12,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Navbar />
