@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/NorsemanYacht/static/css/main.c0e06d4c.css",
-    "main.js": "/NorsemanYacht/static/js/main.dcadf40e.js",
+    "main.css": "/NorsemanYacht/static/css/main.929d50fb.css",
+    "main.js": "/NorsemanYacht/static/js/main.1ce0f550.js",
     "index.html": "/NorsemanYacht/index.html",
-    "main.c0e06d4c.css.map": "/NorsemanYacht/static/css/main.c0e06d4c.css.map",
-    "main.dcadf40e.js.map": "/NorsemanYacht/static/js/main.dcadf40e.js.map"
+    "main.929d50fb.css.map": "/NorsemanYacht/static/css/main.929d50fb.css.map",
+    "main.1ce0f550.js.map": "/NorsemanYacht/static/js/main.1ce0f550.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0e06d4c.css",
-    "static/js/main.dcadf40e.js"
+    "static/css/main.929d50fb.css",
+    "static/js/main.1ce0f550.js"
   ]
 }
