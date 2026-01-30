@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { FaInstagram, FaTwitter, FaFacebookF } from 'react-icons/fa';
 

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { motion } from 'framer-motion';
 import { Timeline, TimelineItem } from '../components/Timeline';
 import { Target, Wind, Award } from 'react-feather';
