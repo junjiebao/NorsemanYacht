@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+
 import { ExternalLink, Maximize2, Navigation } from 'react-feather';
 import { FaUsers } from 'react-icons/fa';
 
@@ -379,11 +379,7 @@ const Yachts = () => {
     <div className="pt-20 min-h-screen bg-ocean-navy-soft">
       <div className="container mx-auto px-4 py-12">
         {/* Page Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <h1 className="font-playfair text-5xl font-bold text-white mb-4">
             NORSEMAN FLEET
           </h1>
@@ -391,15 +387,13 @@ const Yachts = () => {
             M12, A520 and SL950 form the inaugural Norseman fleet – covering Alaska expeditions, coastal
             adventure cruising and super long‑range blue‑water passages.
           </p>
-        </motion.div>
+        </div>
 
         {/* Yacht Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {yachts.map((yacht, index) => (
-            <motion.div
+            <div
               key={yacht.id}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative bg-white shadow-lg hover:shadow-2xl transition-all duration-300"
@@ -477,16 +471,13 @@ const Yachts = () => {
                   </button>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
         {/* Selected Yacht Detail */}
         {selectedYacht && (
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mt-16 bg-ocean-navy text-slate-100 rounded-3xl overflow-hidden shadow-2xl"
+          <div className="mt-16 bg-ocean-navy text-slate-100 rounded-3xl overflow-hidden shadow-2xl">
           >
             <div className="flex flex-col lg:flex-row">
               {/* Text side */}
@@ -552,14 +543,11 @@ const Yachts = () => {
               {/* Image side */}
               {renderDetailImage()}
             </div>
-          </motion.div>
+          </div>
         )}
 
         {/* Series Overview */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
+        <div
           className="mt-20 bg-ocean-navy text-white p-8"
         >
           <div className="max-w-4xl mx-auto">
@@ -592,7 +580,7 @@ const Yachts = () => {
               ))}
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
