@@ -157,7 +157,7 @@ const Yachts = () => {
     const images = getM12Images();
     const interval = setInterval(() => {
       setActiveM12Image((prev) => (prev + 1) % images.length);
-    }, 1000);
+    }, 3500);
 
     return () => clearInterval(interval);
   }, [selectedYacht, isM12Hovered]);
@@ -169,7 +169,7 @@ const Yachts = () => {
     const images = getA520Images();
     const interval = setInterval(() => {
       setActiveA520Image((prev) => (prev + 1) % images.length);
-    }, 1000);
+    }, 3500);
 
     return () => clearInterval(interval);
   }, [selectedYacht, isA520Hovered]);
@@ -181,7 +181,7 @@ const Yachts = () => {
     const images = getSL950Images();
     const interval = setInterval(() => {
       setActiveSL950Image((prev) => (prev + 1) % images.length);
-    }, 1000);
+    }, 3500);
 
     return () => clearInterval(interval);
   }, [selectedYacht, isSL950Hovered]);
@@ -398,8 +398,6 @@ const Yachts = () => {
           {yachts.map((yacht, index) => (
             <div
               key={yacht.id}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative bg-white shadow-lg hover:shadow-2xl transition-all duration-300"
             >
               {/* Yacht Image */}

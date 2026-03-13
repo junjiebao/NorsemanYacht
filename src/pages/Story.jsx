@@ -1,7 +1,15 @@
 
+
 import { motion } from 'framer-motion';
-import { Timeline, TimelineItem } from '../components/Timeline';
 import { Target, Wind, Award } from 'react-feather';
+
+const timelineItems = [
+  { year: '1980', title: 'Foundations in the United States', desc: 'Norseman Yachts begins operations in the USA, focusing on robust blue-water sailing yachts built to go far beyond the horizon.' },
+  { year: '1990s', title: 'Custom Yacht Heritage', desc: "The brand earns a reputation for finely crafted semi-custom yachts, tailored around each owner's cruising aspirations." },
+  { year: '2000s', title: 'The Alaska Motor Yacht Series', desc: 'Introduction of the Alaska semi-planing motor yacht series, combining classic lines with 20-knot performance and refined interiors.' },
+  { year: '2010s', title: 'Global Fleet', desc: 'More than 200 Norseman yachts cruise across the globe, many of them still in excellent condition and highly sought after on the pre-owned market.' },
+  { year: 'Today', title: 'Future-ready Ocean Vessels', desc: 'Norseman continues to evolve its eco-friendly, high-performance, self-sufficient and long-range platforms, uniting modern technology with proven ocean-going hulls.' },
+];
 
 const Story = () => {
   return (
@@ -46,10 +54,10 @@ const Story = () => {
               The Alaska series are classic motor yachts with semi-planing hulls capable of travelling at
               speeds above 20 knots. These beautiful classics are built with fine materials and craftsmanship
               on par with top luxury yachts. Today, there are more than 200 Norseman yachts worldwide, each
-              one semi-custom built according to the owner’s taste and individual requirements.
+              one semi-custom built according to the owner's taste and individual requirements.
             </p>
             <p>
-              From earlier sailing yachts to today’s new motor yachts, every Norseman is a testament to our
+              From earlier sailing yachts to today's new motor yachts, every Norseman is a testament to our
               build quality. Many of the older vessels remain in excellent condition, retain strong market
               value and serve as living proof of our commitment to long-lasting construction.
             </p>
@@ -124,28 +132,31 @@ const Story = () => {
             Our Journey
           </h2>
 
-          <Timeline>
-            <TimelineItem year="1980" title="Foundations in the United States">
-              Norseman Yachts begins operations in the USA, focusing on robust blue-water sailing yachts built
-              to go far beyond the horizon.
-            </TimelineItem>
-            <TimelineItem year="1990s" title="Custom Yacht Heritage">
-              The brand earns a reputation for finely crafted semi-custom yachts, tailored around each owner’s
-              cruising aspirations.
-            </TimelineItem>
-            <TimelineItem year="2000s" title="The Alaska Motor Yacht Series">
-              Introduction of the Alaska semi-planing motor yacht series, combining classic lines with 20-knot
-              performance and refined interiors.
-            </TimelineItem>
-            <TimelineItem year="2010s" title="Global Fleet">
-              More than 200 Norseman yachts cruise across the globe, many of them still in excellent condition
-              and highly sought after on the pre-owned market.
-            </TimelineItem>
-            <TimelineItem year="Today" title="Future-ready Ocean Vessels">
-              Norseman continues to evolve its Eco-firendly, high-performance, self‑sufficient and long-range platforms, uniting modern technology
-              with proven ocean-going hulls.
-            </TimelineItem>
-          </Timeline>
+          <div className="relative max-w-3xl mx-auto">
+            {/* vertical line */}
+            <div className="absolute left-[72px] top-0 bottom-0 w-px bg-slate-200 hidden md:block" />
+            <div className="space-y-10">
+              {timelineItems.map((item, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.08 }}
+                  className="flex gap-6 md:gap-8 items-start"
+                >
+                  <div className="shrink-0 w-[72px] text-right">
+                    <span className="font-inter text-sm font-semibold text-ocean-gold">{item.year}</span>
+                  </div>
+                  <div className="relative md:pl-8">
+                    <div className="absolute -left-[5px] top-[5px] w-2.5 h-2.5 rounded-full bg-ocean-gold hidden md:block" />
+                    <h3 className="font-playfair text-lg font-bold text-slate-900 mb-1">{item.title}</h3>
+                    <p className="font-inter text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -155,7 +166,7 @@ const Story = () => {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
               <img
-                src="Assets\Branding\Hull testing.PNG"
+                src={`${process.env.PUBLIC_URL}/Assets/Branding/Hull testing.PNG`}
                 alt="Craftsmanship"
                 className="w-full h-auto shadow-2xl"
               />
@@ -172,7 +183,7 @@ const Story = () => {
                   'An average of 18,000 man-hours invested in each yacht',
                   'Timber sourced from responsibly managed forests',
                   'Hand-polished stainless steel hardware throughout',
-                  'Systems integration tailored to each owner’s cruising profile',
+                  'Systems integration tailored to each owner's cruising profile',
                 ].map((item, index) => (
                   <li key={index} className="flex items-center">
                     <div className="w-2 h-2 bg-amber-100 rounded-full mr-3" />

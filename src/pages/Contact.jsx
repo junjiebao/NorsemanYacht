@@ -1,18 +1,22 @@
 
+
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { Phone, Mail, MapPin, Clock, Send } from 'react-feather';
 
 const Contact = () => {
+  const [submitted, setSubmitted] = useState(false);
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log('Form submitted:', data);
-    alert('Thank you for your enquiry. Our team will respond within 24 hours.');
+    setSubmitted(true);
+    reset();
   };
 
   return (
@@ -51,20 +55,20 @@ const Contact = () => {
                   {
                     icon: <MapPin className="text-amber-100" size={20} />,
                     title: 'Address',
-                    content: 'Nordnesveien 50, 5008 Bergen, Norway',
-                    link: 'https://goo.gl/maps/your-location',
+                    content: '12 Marina Boulevard, Monaco, MC 98000',
+                    link: 'https://maps.google.com/?q=12+Marina+Boulevard+Monaco',
                   },
                   {
                     icon: <Phone className="text-amber-100" size={20} />,
                     title: 'Telephone',
-                    content: '+47 55 30 00 00',
-                    link: 'tel:+4755300000',
+                    content: '+377 98 76 54 32',
+                    link: 'tel:+37798765432',
                   },
                   {
                     icon: <Mail className="text-amber-100" size={20} />,
                     title: 'Email',
-                    content: 'explore@norsemanyachts.com',
-                    link: 'mailto:explore@norsemanyachts.com',
+                    content: 'inquiry@norsemanyachts.com',
+                    link: 'mailto:inquiry@norsemanyachts.com',
                   },
                   {
                     icon: <Clock className="text-amber-100" size={20} />,
@@ -135,6 +139,13 @@ const Contact = () => {
               </h2>
 
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+
+                {/* Success Message */}
+                {submitted && (
+                  <div className="bg-green-50 border border-green-200 text-green-800 px-6 py-4 rounded font-inter text-sm">
+                    Thank you for your enquiry. Our team will respond within 24 hours.
+                  </div>
+                )}
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block font-inter font-medium text-slate-700 mb-2">

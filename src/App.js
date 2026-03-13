@@ -9,6 +9,8 @@ import Story from './pages/Story';
 import Events from './pages/Events';
 import Network from './pages/Network';
 import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfUse from './pages/TermsOfUse';
 
 function App() {
   return (
