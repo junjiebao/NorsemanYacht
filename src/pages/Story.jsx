@@ -183,7 +183,7 @@ const Story = () => {
                   'An average of 18,000 man-hours invested in each yacht',
                   'Timber sourced from responsibly managed forests',
                   'Hand-polished stainless steel hardware throughout',
-                  'Systems integration tailored to each owner's cruising profile',
+                  "Systems integration tailored to each owner's cruising profile",
                 ].map((item, index) => (
                   <li key={index} className="flex items-center">
                     <div className="w-2 h-2 bg-amber-100 rounded-full mr-3" />
