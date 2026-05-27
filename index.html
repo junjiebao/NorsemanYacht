@@ -1,1 +1,896 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/NorsemanYacht/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#0f172a"/><meta name="description" content="Norseman Yachts – expedition and long‑range yachts with a heritage of blue‑water craftsmanship since 1980."/><link rel="apple-touch-icon" href="/NorsemanYacht/logo192.png"/><link rel="manifest" href="/NorsemanYacht/manifest.json"/><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet"><title>Norseman Yachts – Beyond the Horizon</title><script defer="defer" src="/NorsemanYacht/static/js/main.1ce0f550.js"></script><link href="/NorsemanYacht/static/css/main.929d50fb.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Norseman H420 — Premium Aluminum Yacht | $599,000 USD</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#060d1f;
+  --navy-mid:#0d1b35;
+  --navy-light:#132347;
+  --gold:#c9a96e;
+  --gold-light:#e8d5a8;
+  --gold-dark:#9a7840;
+  --silver:#9eb3c8;
+  --white:#f5f2ed;
+  --off:#b8c5d0;
+  --accent:#1e6fa5;
+  --red-cta:#c0392b;
+}
+html{scroll-behavior:smooth}
+body{background:var(--navy);color:var(--white);font-family:'Barlow',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
+
+/* ——— TYPOGRAPHY ——— */
+.serif{font-family:'Cormorant Garamond',serif}
+.condensed{font-family:'Barlow Condensed',sans-serif}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1.15}
+h1{font-size:clamp(2.8rem,6vw,5.5rem);letter-spacing:-0.01em}
+h2{font-size:clamp(2rem,4vw,3.2rem)}
+h3{font-size:clamp(1.2rem,2vw,1.6rem);font-weight:400}
+p{font-size:clamp(0.95rem,1.2vw,1.1rem);color:var(--off)}
+
+/* ——— LAYOUT ——— */
+section{padding:100px 5%;position:relative}
+.container{max-width:1280px;margin:0 auto}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+
+/* ——— DIVIDERS ——— */
+.gold-line{width:60px;height:2px;background:var(--gold);margin:20px 0 30px}
+.center .gold-line{margin:20px auto 30px}
+.section-tag{font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+
+/* ——— BUTTONS ——— */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:none;transition:all 0.3s ease}
+.btn-gold{background:var(--gold);color:var(--navy);border:2px solid var(--gold)}
+.btn-gold:hover{background:transparent;color:var(--gold)}
+.btn-outline{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,0.3)}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.btn-whatsapp{background:#25d366;color:#fff;border:2px solid #25d366}
+.btn-whatsapp:hover{background:#128c3e}
+.btn svg{width:20px;height:20px;fill:currentColor}
+
+/* ——— HERO ——— */
+#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0;position:relative;overflow:hidden;background:linear-gradient(165deg,#0a1428 0%,#060d1f 60%)}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-ocean{position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(180deg,transparent 0%,rgba(6,13,31,0.8) 100%)}
+.hero-boat-visual{position:absolute;right:0;top:50%;transform:translateY(-50%);width:62%;height:80%;display:flex;align-items:center;justify-content:center;z-index:1}
+.hero-boat-render{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 30px 80px rgba(201,169,110,0.15))}
+.boat-placeholder{width:100%;height:100%;background:linear-gradient(135deg,rgba(19,35,71,0.6) 0%,rgba(30,111,165,0.1) 100%);border:1px solid rgba(201,169,110,0.1);border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+.boat-placeholder-text{font-family:'Barlow Condensed',sans-serif;letter-spacing:0.15em;color:rgba(201,169,110,0.4);font-size:0.8rem}
+.hero-content{position:relative;z-index:2;padding:0 5% 80px;max-width:640px}
+.hero-tag{font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);background:rgba(201,169,110,0.08);border:1px solid rgba(201,169,110,0.2);padding:8px 20px;display:inline-block;margin-bottom:28px}
+.hero-title{margin-bottom:20px}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:1.1rem;color:var(--silver);max-width:480px;margin-bottom:36px;font-weight:300}
+.hero-price-block{display:flex;align-items:baseline;gap:16px;margin-bottom:40px;padding:20px 28px;background:rgba(201,169,110,0.06);border-left:3px solid var(--gold);border-right:none}
+.price-label{font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:4px}
+.price-amount{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--white);line-height:1}
+.price-note{font-size:0.8rem;color:var(--silver)}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
+.hero-scroll{position:absolute;bottom:30px;right:5%;z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px}
+.hero-scroll span{font-family:'Barlow Condensed',sans-serif;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.3)}
+.scroll-line{width:1px;height:50px;background:linear-gradient(180deg,rgba(201,169,110,0.6),transparent);animation:scrollLine 2s ease-in-out infinite}
+@keyframes scrollLine{0%,100%{opacity:0.3;transform:scaleY(0.5)}50%{opacity:1;transform:scaleY(1)}}
+
+/* ——— NAV ——— */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 5%;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(180deg,rgba(6,13,31,0.95) 0%,transparent 100%);transition:background 0.3s}
+nav.scrolled{background:rgba(6,13,31,0.97);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,169,110,0.1)}
+.nav-brand{font-family:'Cormorant Garamond',serif;font-size:1.4rem;letter-spacing:0.05em;color:var(--white)}
+.nav-brand strong{color:var(--gold)}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:0.78rem;letter-spacing:0.15em;text-transform:uppercase;text-decoration:none;color:rgba(255,255,255,0.6);transition:color 0.2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;background:var(--gold);color:var(--navy);padding:10px 22px;text-decoration:none;font-weight:600;transition:all 0.2s}
+.nav-cta:hover{background:var(--gold-light)}
+
+/* ——— STATS BAR ——— */
+#stats-bar{padding:40px 5%;background:var(--navy-mid);border-top:1px solid rgba(201,169,110,0.1);border-bottom:1px solid rgba(201,169,110,0.1)}
+.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;max-width:1280px;margin:0 auto}
+.stat-item{text-align:center;padding:20px;border-right:1px solid rgba(255,255,255,0.06)}
+.stat-item:last-child{border-right:none}
+.stat-value{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:600;color:var(--gold);line-height:1;display:block;margin-bottom:6px}
+.stat-label{font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--silver)}
+
+/* ——— WHY SECTION ——— */
+#why{background:var(--navy)}
+.why-intro{max-width:700px;margin-bottom:80px}
+.advantage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(201,169,110,0.08)}
+.advantage-card{background:var(--navy-mid);padding:40px 32px;position:relative;overflow:hidden;transition:background 0.3s}
+.advantage-card:hover{background:var(--navy-light)}
+.advantage-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--gold),transparent);opacity:0;transition:opacity 0.3s}
+.advantage-card:hover::before{opacity:1}
+.adv-number{font-family:'Barlow Condensed',sans-serif;font-size:0.65rem;letter-spacing:0.3em;color:rgba(201,169,110,0.3);margin-bottom:16px;display:block}
+.adv-icon{width:48px;height:48px;border:1px solid rgba(201,169,110,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:var(--gold);font-size:1.4rem}
+.adv-title{font-family:'Barlow Condensed',sans-serif;font-size:1.15rem;font-weight:600;letter-spacing:0.05em;color:var(--white);margin-bottom:12px;text-transform:uppercase}
+.adv-text{font-size:0.9rem;color:var(--off);line-height:1.7}
+.vs-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(201,169,110,0.08);border:1px solid rgba(201,169,110,0.15);padding:4px 12px;font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;letter-spacing:0.1em;color:var(--gold);margin-top:12px;text-transform:uppercase}
+
+/* ——— SPECS ——— */
+#specs{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-mid) 100%)}
+.specs-header{text-align:center;margin-bottom:70px}
+.specs-engine-banner{background:linear-gradient(90deg,rgba(201,169,110,0.12),rgba(201,169,110,0.04));border:1px solid rgba(201,169,110,0.2);padding:28px 36px;display:flex;align-items:center;justify-content:space-between;margin-bottom:60px;gap:20px}
+.engine-badge{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--gold)}
+.engine-note{font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--silver)}
+.specs-columns{display:grid;grid-template-columns:repeat(2,1fr);gap:40px}
+.spec-category{margin-bottom:0}
+.spec-category-title{font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);padding-bottom:12px;border-bottom:1px solid rgba(201,169,110,0.15);margin-bottom:20px}
+.spec-row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.04)}
+.spec-row:last-child{border-bottom:none}
+.spec-key{font-size:0.875rem;color:var(--silver)}
+.spec-val{font-family:'Barlow Condensed',sans-serif;font-size:0.95rem;font-weight:500;color:var(--white);text-align:right}
+.spec-val.highlight{color:var(--gold)}
+
+/* ——— GALLERY ——— */
+#gallery{background:var(--navy-mid);padding:80px 5%}
+.gallery-header{text-align:center;margin-bottom:50px}
+.gallery-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:280px 280px;gap:8px;max-width:1280px;margin:0 auto}
+.gallery-item{background:var(--navy-light);position:relative;overflow:hidden;cursor:pointer}
+.gallery-item:first-child{grid-row:span 2}
+.gallery-item::after{content:'';position:absolute;inset:0;background:rgba(6,13,31,0.3);transition:opacity 0.3s;pointer-events:none}
+.gallery-item:hover::after{opacity:0}
+.gallery-boat{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(201,169,110,0.3);background:linear-gradient(135deg,#0d1b35 0%,#132347 100%)}
+.gallery-label{position:absolute;bottom:16px;left:16px;z-index:2;font-family:'Barlow Condensed',sans-serif;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);background:rgba(6,13,31,0.7);padding:6px 14px;backdrop-filter:blur(4px);pointer-events:none}
+.gallery-item img{cursor:zoom-in}
+
+/* ——— GALLERY LIGHTBOX ——— */
+#gallery-lightbox{position:fixed;inset:0;z-index:2000;background:rgba(2,8,20,0.94);display:none;align-items:center;justify-content:center;padding:24px}
+#gallery-lightbox.active{display:flex}
+.lightbox-stage{width:min(96vw,1600px);height:min(92vh,980px);overflow:auto;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.12);background:rgba(8,18,36,0.5)}
+#lightbox-image{max-width:100%;max-height:100%;display:block;cursor:zoom-in;user-select:none}
+#lightbox-image.zoomed{cursor:zoom-out}
+.lightbox-close,.lightbox-zoom{position:absolute;border:1px solid rgba(255,255,255,0.22);background:rgba(6,13,31,0.75);color:#fff;cursor:pointer}
+.lightbox-close{top:18px;right:22px;width:42px;height:42px;font-size:26px;line-height:1}
+.lightbox-controls{position:absolute;bottom:22px;right:22px;display:flex;gap:8px}
+.lightbox-zoom{width:38px;height:38px;font-size:22px;line-height:1}
+.lightbox-tip{position:absolute;left:24px;bottom:24px;font-size:0.78rem;color:rgba(255,255,255,0.72);letter-spacing:.03em}
+@media(max-width:768px){
+  .lightbox-tip{display:none}
+}
+
+
+/* ——— SCENARIOS ——— */
+#scenarios{background:var(--navy)}
+.scenarios-header{text-align:center;margin-bottom:70px}
+.scenario-list{display:grid;grid-template-columns:repeat(2,1fr);gap:40px;max-width:1280px;margin:0 auto}
+.scenario-card{display:flex;gap:28px;padding:36px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);position:relative;overflow:hidden;transition:border-color 0.3s}
+.scenario-card:hover{border-color:rgba(201,169,110,0.2)}
+.scenario-icon{width:56px;height:56px;min-width:56px;background:rgba(201,169,110,0.08);border:1px solid rgba(201,169,110,0.15);display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:var(--gold)}
+.scenario-body{}
+.scenario-title{font-family:'Barlow Condensed',sans-serif;font-size:1.05rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--white);margin-bottom:10px}
+.scenario-text{font-size:0.9rem;color:var(--off);line-height:1.7}
+.scenario-detail{margin-top:12px;font-size:0.8rem;color:var(--silver);font-style:italic}
+
+/* ——— TRUST ——— */
+#trust{background:linear-gradient(180deg,var(--navy-mid) 0%,var(--navy) 100%);text-align:center}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;max-width:1200px;margin:60px auto 0}
+.trust-item{padding:40px 30px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06)}
+.trust-number{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:var(--gold);display:block;line-height:1;margin-bottom:12px}
+.trust-label{font-family:'Barlow Condensed',sans-serif;font-size:0.8rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--silver);display:block;margin-bottom:16px}
+.trust-desc{font-size:0.88rem;color:var(--off)}
+.brand-logos{display:flex;flex-wrap:wrap;justify-content:center;gap:30px 50px;margin-top:60px;padding-top:50px;border-top:1px solid rgba(255,255,255,0.06)}
+.brand-logo{font-family:'Barlow Condensed',sans-serif;font-size:0.8rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.25);font-weight:600}
+
+/* ——— PRICING CTA ——— */
+#pricing{background:var(--navy-mid);padding:80px 5%}
+.pricing-inner{max-width:900px;margin:0 auto;text-align:center}
+.pricing-box{background:linear-gradient(135deg,rgba(201,169,110,0.08),rgba(30,111,165,0.05));border:1px solid rgba(201,169,110,0.2);padding:60px;margin:40px 0;position:relative}
+.pricing-box::before{content:'FEATURED VESSEL';position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--navy);font-family:'Barlow Condensed',sans-serif;font-size:0.65rem;letter-spacing:0.2em;font-weight:600;padding:6px 20px}
+.pricing-main{font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:600;color:var(--white);line-height:1;margin:20px 0 8px}
+.pricing-main sup{font-size:2.5rem;vertical-align:super;color:var(--gold)}
+.pricing-config{font-family:'Barlow Condensed',sans-serif;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:24px}
+.pricing-includes{display:flex;justify-content:center;gap:30px;flex-wrap:wrap;margin:24px 0}
+.pricing-includes span{font-size:0.85rem;color:var(--silver);display:flex;align-items:center;gap:6px}
+.pricing-includes span::before{content:'✓';color:var(--gold)}
+
+/* ——— FORM ——— */
+#contact{background:var(--navy);padding:100px 5%}
+.contact-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start}
+.contact-info{}
+.contact-info p{margin-bottom:30px}
+.contact-detail{display:flex;align-items:flex-start;gap:16px;margin-bottom:24px}
+.contact-detail-icon{width:40px;height:40px;min-width:40px;border:1px solid rgba(201,169,110,0.2);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1rem}
+.contact-detail-text{font-size:0.9rem;color:var(--off)}
+.contact-detail-text strong{display:block;color:var(--white);font-weight:500;margin-bottom:2px}
+.contact-form{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.07);padding:48px}
+.form-title{font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:28px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--silver);margin-bottom:8px}
+.form-group input,.form-group select,.form-group textarea{width:100%;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);color:var(--white);padding:14px 18px;font-family:'Barlow',sans-serif;font-size:0.9rem;outline:none;transition:border-color 0.2s;-webkit-appearance:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold)}
+.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,0.2)}
+.form-group textarea{min-height:120px;resize:vertical}
+.form-group select option{background:var(--navy-mid)}
+.form-submit{width:100%;padding:18px;background:var(--gold);color:var(--navy);font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;border:none;cursor:pointer;transition:all 0.2s;margin-top:8px}
+.form-submit:hover{background:var(--gold-light)}
+.form-privacy{font-size:0.75rem;color:rgba(255,255,255,0.2);text-align:center;margin-top:16px}
+.success-msg{display:none;text-align:center;padding:40px;color:var(--gold)}
+.success-msg h3{font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px}
+
+/* ——— FLOATING WA ——— */
+#wa-float{position:fixed;bottom:32px;right:32px;z-index:999;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.wa-tooltip{background:var(--navy-mid);border:1px solid rgba(201,169,110,0.2);padding:10px 18px;font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);white-space:nowrap;animation:fadeInUp 0.5s ease 2s both}
+.wa-btn{width:60px;height:60px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,0.3);transition:transform 0.2s;cursor:pointer;text-decoration:none}
+.wa-btn:hover{transform:scale(1.1)}
+.wa-btn svg{width:30px;height:30px;fill:#fff}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* ——— FOOTER ——— */
+footer{background:var(--navy-mid);border-top:1px solid rgba(255,255,255,0.06);padding:40px 5%;text-align:center}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--white);margin-bottom:8px}
+.footer-sub{font-size:0.8rem;color:rgba(255,255,255,0.25)}
+
+/* ——— ANIMATIONS ——— */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.7s ease,transform 0.7s ease}
+.reveal.visible{opacity:1;transform:none}
+.reveal-delay-1{transition-delay:0.1s}
+.reveal-delay-2{transition-delay:0.2s}
+.reveal-delay-3{transition-delay:0.3s}
+
+/* ——— RESPONSIVE ——— */
+@media(max-width:1024px){
+  .advantage-grid{grid-template-columns:repeat(2,1fr)}
+  .specs-columns{grid-template-columns:1fr}
+  .scenario-list{grid-template-columns:1fr}
+  .contact-inner{grid-template-columns:1fr}
+  .trust-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(3,1fr)}
+  .grid-2{grid-template-columns:1fr}
+  .hero-boat-visual{width:100%;top:20%;transform:none;opacity:0.15;height:60%}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .gallery-item:first-child{grid-row:span 1}
+}
+@media(max-width:768px){
+  section{padding:70px 5%}
+  .advantage-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .grid-3,.grid-4{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  nav .nav-links{display:none}
+  .hero-ctas{flex-direction:column}
+  .gallery-grid{grid-template-columns:1fr}
+  .pricing-main{font-size:3.5rem}
+  .contact-form{padding:28px}
+  .pricing-box{padding:36px 24px}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <div class="nav-brand">NORSEMAN <strong>H420</strong></div>
+  <ul class="nav-links">
+    <li><a href="#why">Why H420</a></li>
+    <li><a href="#specs">Specifications</a></li>
+    <li><a href="#scenarios">Lifestyle</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact">Enquire</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Request Details</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <div class="hero-ocean"></div>
+  </div>
+  <div class="hero-boat-visual">
+    <img
+      class="hero-boat-render"
+      src="https://raw.githubusercontent.com/junjiebao/NorsemanYacht/main/H420%20cruise.jpg"
+      alt="Norseman H420 cruise view"
+      loading="eager"
+      decoding="async"
+      referrerpolicy="no-referrer"
+    />
+  </div>
+  <div class="hero-content">
+    <div class="hero-tag">Premium Aluminum Power Yacht · 42' LOA</div>
+    <h1 class="hero-title">Built for Those<br>Who <em>Refuse</em><br>to Compromise</h1>
+    <p class="hero-sub">The Norseman H420 redefines what a 42-foot motor yacht can be — military-grade 5083-H116 aluminum construction, fly bridge command, and twin outboard power, engineered for real offshore capability and uncompromised comfort.</p>
+    <div class="hero-price-block">
+      <div>
+        <span class="price-label">Starting Price — Twin 300HP Mercury Configuration</span>
+        <span class="price-amount">$599,000 USD</span>
+        <span class="price-note">Fully equipped · Factory direct · Dealer enquiries welcome</span>
+      </div>
+    </div>
+    <div class="hero-ctas">
+      <a href="https://wa.me/971561018837?text=I%20am%20interested%20in%20the%20Norseman%20H420%20%E2%80%94%20please%20send%20details." class="btn btn-whatsapp" target="_blank">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Enquiry
+      </a>
+      <a href="https://raw.githubusercontent.com/junjiebao/NorsemanYacht/main/Norseman%20H420%20Spec%2020260419R.pdf" class="btn btn-outline" target="_blank" rel="noopener" download>Download Brochure</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Discover</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div id="stats-bar">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <span class="stat-value">42'</span>
+      <span class="stat-label">Length Overall</span>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <span class="stat-value">16'</span>
+      <span class="stat-label">Beam</span>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <span class="stat-value">400</span>
+      <span class="stat-label">Gal Fuel Capacity</span>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <span class="stat-value">850HP</span>
+      <span class="stat-label">Max Engine Power</span>
+    </div>
+    <div class="stat-item reveal">
+      <span class="stat-value">5083</span>
+      <span class="stat-label">H116 Marine Alloy</span>
+    </div>
+  </div>
+</div>
+
+<!-- WHY H420 -->
+<section id="why">
+  <div class="container">
+    <div class="why-intro reveal">
+      <div class="section-tag">Why Choose the H420</div>
+      <h2>Where Aluminum Meets Ambition</h2>
+      <div class="gold-line"></div>
+      <p>The H420 isn't a compromise between performance and comfort. It's the result of rethinking what a 42-foot yacht should do — starting with the hull and ending at the fly bridge. Here's why serious buyers choose it over conventional GRP alternatives.</p>
+    </div>
+    <div class="advantage-grid">
+      <div class="advantage-card reveal">
+        <span class="adv-number">01</span>
+        <div class="adv-icon">⬡</div>
+        <div class="adv-title">Military-Grade Hull Construction</div>
+        <p class="adv-text">The entire hull, deck, and structural frames are fabricated from 5083-H116 aluminum magnesium alloy — the same specification used in naval and offshore patrol vessels. Panel thickness ranges from 4mm to 10mm depending on load zone, backed by a full longitudinal and transverse stringer system.</p>
+        <span class="vs-badge">vs GRP: 40% lighter · corrosion-proof · structurally superior</span>
+      </div>
+      <div class="advantage-card reveal reveal-delay-1">
+        <span class="adv-number">02</span>
+        <div class="adv-icon">⚡</div>
+        <div class="adv-title">Twin Outboard Flexibility</div>
+        <p class="adv-text">Factory-configured for twin outboard engines from 300HP to 425HP per engine — giving you up to 850HP total. Choose your preferred Mercury or Yamaha power package. Outboard configuration means dramatically reduced maintenance costs, easier servicing, and superior shallow-water access compared to shaft-drive alternatives.</p>
+        <span class="vs-badge">vs inboard: lower cost · quicker service · better draft</span>
+      </div>
+      <div class="advantage-card reveal reveal-delay-2">
+        <span class="adv-number">03</span>
+        <div class="adv-icon">🧭</div>
+        <div class="adv-title">LEWMAR Bow Thruster Standard</div>
+        <p class="adv-text">A LEWMAR® TT 185 Gen 2 12V electric bow thruster is fitted as standard — not an option. Single-handed docking in tight marina berths, crosswinds, or strong tidal currents is transformed from stressful to effortless. Many competing 42-foot vessels offer this only as a costly upgrade.</p>
+        <span class="vs-badge">vs competitors: standard fit · 3.0kW thrust · Gen 2 precision</span>
+      </div>
+      <div class="advantage-card reveal">
+        <span class="adv-number">04</span>
+        <div class="adv-icon">🏠</div>
+        <div class="adv-title">Genuine Live-Aboard Comfort</div>
+        <p class="adv-text">Two full private cabins, two TACMA® electric heads with molded FRP walk-in showers, a fully appointed galley, and four 16,000 BTU reverse-cycle marine air conditioning units. The H420 sleeps and lives like a much larger yacht, with synthetic wood flooring, quality upholstery, and GROHE® fittings throughout.</p>
+        <span class="vs-badge">vs comparable length: 4× AC units · 2 full heads · real galley</span>
+      </div>
+      <div class="advantage-card reveal reveal-delay-1">
+        <span class="adv-number">05</span>
+        <div class="adv-icon">⚡</div>
+        <div class="adv-title">MASTERVOLT Electrical Architecture</div>
+        <p class="adv-text">Six dedicated 12V/250AH sealed gel battery banks — separate circuits for house, bow thruster/windlass, and engines. A MASTERVOLT® COMBIMASTER 3000W inverter/charger and VICTRON® galvanic isolator protect your investment. Professional-grade power management typically found on yachts twice the size.</p>
+        <span class="vs-badge">vs standard: 1500AH total · isolated circuits · shore power ready</span>
+      </div>
+      <div class="advantage-card reveal reveal-delay-2">
+        <span class="adv-number">06</span>
+        <div class="adv-icon">🔒</div>
+        <div class="adv-title">Safety-First Design Philosophy</div>
+        <p class="adv-text">Vacuum-infused FRP composite hardtop cored with high-density PVC foam, six through-bolted 316 SS cleats, six automatic bilge pumps with float switches plus two manual emergency pumps, LEWMAR® electric anchor windlass, and a 25kg polished SS anchor on 60m of 8mm HT chain. Built for genuine offshore use.</p>
+        <span class="vs-badge">vs production yachts: offshore-spec · redundant bilge system</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECS -->
+<section id="specs">
+  <div class="container">
+    <div class="specs-header reveal">
+      <div class="section-tag">Official Technical Specifications</div>
+      <h2>Built to Specification.<br>No Compromises.</h2>
+      <div class="gold-line" style="margin:20px auto 20px"></div>
+      <p>All data extracted directly from Norseman factory documentation. Specifications are for the standard H420 build. Engine configuration shown reflects the recommended twin 300HP Mercury package.</p>
+    </div>
+    <div class="specs-engine-banner reveal">
+      <div>
+        <div class="engine-badge">Twin Mercury 300HP Outboards</div>
+        <div class="engine-note">Featured configuration · Factory-supported · Up to twin 425HP available</div>
+      </div>
+      <div style="text-align:right">
+        <div class="engine-badge" style="font-size:1.2rem">$599,000 USD</div>
+        <div class="engine-note">Price inclusive of standard specification</div>
+      </div>
+    </div>
+    <div class="specs-columns">
+      <div>
+        <div class="spec-category reveal">
+          <div class="spec-category-title">Principal Dimensions</div>
+          <div class="spec-row"><span class="spec-key">Length Overall (LOA)</span><span class="spec-val highlight">12.9 M / 42' 2"</span></div>
+          <div class="spec-row"><span class="spec-key">Maximum Beam</span><span class="spec-val">4.9 M / 16' 0"</span></div>
+          <div class="spec-row"><span class="spec-key">Draft</span><span class="spec-val">0.6 M / 2' 10"</span></div>
+          <div class="spec-row"><span class="spec-key">Displacement</span><span class="spec-val">12.7 Ton / 27,900 lbs</span></div>
+          <div class="spec-row"><span class="spec-key">Fuel Tank Capacity</span><span class="spec-val highlight">1,515 L / 400 gals</span></div>
+          <div class="spec-row"><span class="spec-key">Fresh Water Tank</span><span class="spec-val">600 L / 158 gals</span></div>
+        </div>
+        <div class="spec-category reveal" style="margin-top:36px">
+          <div class="spec-category-title">Propulsion & Maneuvering</div>
+          <div class="spec-row"><span class="spec-key">Engine Configuration</span><span class="spec-val highlight">Twin Outboard</span></div>
+          <div class="spec-row"><span class="spec-key">Power Range (each)</span><span class="spec-val">300HP – 425HP</span></div>
+          <div class="spec-row"><span class="spec-key">Bow Thruster</span><span class="spec-val">LEWMAR® TT 185 3.0kW Gen 2</span></div>
+          <div class="spec-row"><span class="spec-key">Anchor Windlass</span><span class="spec-val">LEWMAR® 12V DC Electric</span></div>
+          <div class="spec-row"><span class="spec-key">Anchor</span><span class="spec-val">25kg Polished SS / 60m HT Chain</span></div>
+        </div>
+        <div class="spec-category reveal" style="margin-top:36px">
+          <div class="spec-category-title">Electrical Systems</div>
+          <div class="spec-row"><span class="spec-key">DC System</span><span class="spec-val">12V DC</span></div>
+          <div class="spec-row"><span class="spec-key">AC System</span><span class="spec-val">120V / 60Hz</span></div>
+          <div class="spec-row"><span class="spec-key">Battery Banks (total)</span><span class="spec-val highlight">6 × 12V/250AH Gel</span></div>
+          <div class="spec-row"><span class="spec-key">Inverter/Charger</span><span class="spec-val">MASTERVOLT® COMBIMASTER 3000W</span></div>
+          <div class="spec-row"><span class="spec-key">Galvanic Isolator</span><span class="spec-val">VICTRON® VDI</span></div>
+          <div class="spec-row"><span class="spec-key">Shore Power</span><span class="spec-val">50-amp / 220V Isolation Transformer</span></div>
+          <div class="spec-row"><span class="spec-key">Generator</span><span class="spec-val">Onan® 9kW Diesel MDKDL</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="spec-category reveal">
+          <div class="spec-category-title">Hull & Structural</div>
+          <div class="spec-row"><span class="spec-key">Hull Material</span><span class="spec-val highlight">5083-H116 Aluminum Alloy</span></div>
+          <div class="spec-row"><span class="spec-key">Panel Thickness</span><span class="spec-val">4mm – 10mm</span></div>
+          <div class="spec-row"><span class="spec-key">Stringer System</span><span class="spec-val">Longitudinal & Transverse</span></div>
+          <div class="spec-row"><span class="spec-key">Hardtop Construction</span><span class="spec-val">Vacuum-Infused FRP / PVC Core</span></div>
+          <div class="spec-row"><span class="spec-key">Anti-Fouling</span><span class="spec-val">2-coat Epoxy + 3-coat AF Paint</span></div>
+          <div class="spec-row"><span class="spec-key">Exterior Paint</span><span class="spec-val">HAMPEL® Solid Color</span></div>
+          <div class="spec-row"><span class="spec-key">Deck Surface</span><span class="spec-val">Non-skid / Self-draining</span></div>
+          <div class="spec-row"><span class="spec-key">Deck Cleats</span><span class="spec-val">6 × 316 SS Through-Bolted</span></div>
+        </div>
+        <div class="spec-category reveal" style="margin-top:36px">
+          <div class="spec-category-title">Interior & Accommodation</div>
+          <div class="spec-row"><span class="spec-key">Layout</span><span class="spec-val highlight">2 Cabins / 2 Heads</span></div>
+          <div class="spec-row"><span class="spec-key">Air Conditioning</span><span class="spec-val highlight">4 × 16,000 BTU Reverse Cycle</span></div>
+          <div class="spec-row"><span class="spec-key">Heads</span><span class="spec-val">2 × TACMA® Electric Toilets</span></div>
+          <div class="spec-row"><span class="spec-key">Shower</span><span class="spec-val">Molded FRP Walk-In Stall</span></div>
+          <div class="spec-row"><span class="spec-key">Shower/Sink Fittings</span><span class="spec-val">GROHE® Chrome</span></div>
+          <div class="spec-row"><span class="spec-key">Interior Flooring</span><span class="spec-val">Durable Synthetic Wood</span></div>
+          <div class="spec-row"><span class="spec-key">Galley Appliances</span><span class="spec-val">Fridge / Microwave / Stove / Sink</span></div>
+          <div class="spec-row"><span class="spec-key">Water Heater</span><span class="spec-val">30-Gallon Electric</span></div>
+        </div>
+        <div class="spec-category reveal" style="margin-top:36px">
+          <div class="spec-category-title">Safety & Bilge</div>
+          <div class="spec-row"><span class="spec-key">Automatic Bilge Pumps</span><span class="spec-val highlight">6 × RULE® 1100GPH</span></div>
+          <div class="spec-row"><span class="spec-key">Emergency Manual Pumps</span><span class="spec-val">2 Units</span></div>
+          <div class="spec-row"><span class="spec-key">Engine Room Fire System</span><span class="spec-val">Dedicated Suppression</span></div>
+          <div class="spec-row"><span class="spec-key">Step / Walk Lighting</span><span class="spec-val">HELLA® LED Courtesy Lights</span></div>
+          <div class="spec-row"><span class="spec-key">Navigation Lights</span><span class="spec-val">HELLA® / AQUA SIGNAL® LED</span></div>
+          <div class="spec-row"><span class="spec-key">Smoke & CO Detectors</span><span class="spec-val">Fitted Throughout</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="gallery-header reveal">
+    <div class="section-tag">Vessel Gallery</div>
+    <h2>Three Decks. One Vision.</h2>
+    <div class="gold-line" style="margin:20px auto 0"></div>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <div class="gallery-boat">
+        <img src="https://raw.githubusercontent.com/junjiebao/NorsemanYacht/main/H420%20cruise%20sb.jpg" alt="Norseman H420 Full Profile Starboard" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <div class="gallery-label">Full Profile · Starboard</div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-boat">
+        <img src="https://raw.githubusercontent.com/junjiebao/NorsemanYacht/main/H420%20top%20view.jpg" alt="Norseman H420 Top View" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <div class="gallery-label">Top View</div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-boat">
+        <img src="https://raw.githubusercontent.com/junjiebao/NorsemanYacht/main/H420%20sb.jpg" alt="Norseman H420 Starboard Side" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <div class="gallery-label">Starboard Side</div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-boat">
+        <img src="https://raw.githubusercontent.com/junjiebao/NorsemanYacht/main/H420%20GA%20mian.jpg" alt="Norseman H420 GA Main Deck" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <div class="gallery-label">GA Main Deck</div>
+    </div>
+    <div class="gallery-item">
+      <div class="gallery-boat">
+        <img src="https://raw.githubusercontent.com/junjiebao/NorsemanYacht/main/H420%20GA%20low.jpg" alt="Norseman H420 GA Lower Deck" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <div class="gallery-label">GA Lower Deck</div>
+    </div>
+  </div>
+</section>
+
+<!-- SCENARIOS -->
+<section id="scenarios">
+  <div class="container">
+    <div class="scenarios-header reveal">
+      <div class="section-tag">Real-World Use Cases</div>
+      <h2>Every Occasion.<br>Every Horizon.</h2>
+      <div class="gold-line" style="margin:20px auto 30px"></div>
+      <p style="max-width:600px;margin:0 auto">The H420's layout, range, and comfort specification make it one of the most versatile vessels in its class. Here's how serious owners use it.</p>
+    </div>
+    <div class="scenario-list">
+      <div class="scenario-card reveal">
+        <div class="scenario-icon">⚓</div>
+        <div class="scenario-body">
+          <div class="scenario-title">Extended Coastal Cruising</div>
+          <p class="scenario-text">With 400 gallons of fuel capacity and genuine offshore hull strength, the H420 handles multi-day passages along coastlines — from the Strait of Hormuz to the Mediterranean — with a level of confidence that few 42-foot production yachts can match. The twin outboard configuration provides redundancy and peace of mind far from port.</p>
+          <p class="scenario-detail">Recommended config: Twin 300HP Mercury · Full 400-gal fuel · Watermaker optional upgrade</p>
+        </div>
+      </div>
+      <div class="scenario-card reveal reveal-delay-1">
+        <div class="scenario-icon">🏖️</div>
+        <div class="scenario-body">
+          <div class="scenario-title">Family Offshore Vacation</div>
+          <p class="scenario-text">Two private cabins with high-quality foam mattresses, two fully equipped heads with GROHE® fittings, four zones of 16,000 BTU air conditioning, and a galley stocked to match a shoreside kitchen — the H420 delivers five-star comfort for extended family getaways without the crew overhead of a larger motoryacht.</p>
+          <p class="scenario-detail">Sleeps 4 adults comfortably · AC throughout · Full galley · Swim platform</p>
+        </div>
+      </div>
+      <div class="scenario-card reveal">
+        <div class="scenario-icon">💼</div>
+        <div class="scenario-body">
+          <div class="scenario-title">Corporate & Client Entertainment</div>
+          <p class="scenario-text">The panoramic salon, U-shaped dinette, cockpit wet bar, and fly bridge entertainment space give you multiple hosting environments for business networking, client reception, or VIP day events. The vessel projects authority and refinement — a business asset that doubles as a lifestyle statement.</p>
+          <p class="scenario-detail">Fly bridge helm + entertaining · Cockpit wet bar · Premium interior finishes</p>
+        </div>
+      </div>
+      <div class="scenario-card reveal reveal-delay-1">
+        <div class="scenario-icon">🎣</div>
+        <div class="scenario-body">
+          <div class="scenario-title">Serious Offshore Sport Fishing</div>
+          <p class="scenario-text">The 0.6M draft opens shallow reef and bank fishing beyond the reach of heavier hull alternatives. The twin outboard configuration provides the speed to reach far-offshore grounds efficiently, while the self-draining deck, cockpit wash-down outlet, retractable swim ladder, and structural rigidity keep working conditions safe and practical.</p>
+          <p class="scenario-detail">Shallow draft · 0.6M · High-speed run to grounds · Deck wash · Stable working platform</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section id="trust">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag center">Quality & Craftsmanship</div>
+      <h2>Built to Standards.<br>Trusted by Professionals.</h2>
+      <div class="gold-line" style="margin:20px auto 20px"></div>
+      <p style="max-width:600px;margin:0 auto">The H420 specifies commercial and military-grade components throughout — not because it's necessary for a leisure boat, but because the original designers believed owners deserve genuine reliability.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item reveal">
+        <span class="trust-number">5083</span>
+        <span class="trust-label">Marine Aluminum Grade</span>
+        <p class="trust-desc">H116 temper, magnesium-alloyed aluminum — the marine construction standard for commercial vessels, naval craft, and offshore patrol boats. Superior corrosion resistance in saltwater environments with no osmosis risk.</p>
+      </div>
+      <div class="trust-item reveal reveal-delay-1">
+        <span class="trust-number">6×</span>
+        <span class="trust-label">Bilge Pump Redundancy</span>
+        <p class="trust-desc">Six automatic RULE® 1100GPH bilge pumps with float switches plus two manual emergency backups. The kind of redundancy that reflects a genuine offshore safety philosophy, not a minimum regulatory requirement.</p>
+      </div>
+      <div class="trust-item reveal reveal-delay-2">
+        <span class="trust-number">4×</span>
+        <span class="trust-label">16k BTU AC Zones</span>
+        <p class="trust-desc">Four independent 16,000 BTU reverse-cycle marine air conditioning units — standard fit. In tropical and Middle Eastern waters, this is the difference between a liveable vessel and an uncomfortable one. Most 42' yachts offer one or two zones optionally.</p>
+      </div>
+    </div>
+    <div class="brand-logos reveal">
+      <span class="brand-logo">LEWMAR®</span>
+      <span class="brand-logo">MASTERVOLT®</span>
+      <span class="brand-logo">VICTRON®</span>
+      <span class="brand-logo">ONAN®</span>
+      <span class="brand-logo">HELLA®</span>
+      <span class="brand-logo">GROHE®</span>
+      <span class="brand-logo">RULE®</span>
+      <span class="brand-logo">HAMPEL®</span>
+      <span class="brand-logo">TACMA®</span>
+      <span class="brand-logo">SEAFLO®</span>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="pricing-inner">
+    <div class="reveal">
+      <div class="section-tag" style="text-align:center">Pricing & Configuration</div>
+      <h2 style="text-align:center">Transparent Pricing.<br>No Surprises.</h2>
+      <div class="gold-line" style="margin:20px auto"></div>
+    </div>
+    <div class="pricing-box reveal">
+      <div class="section-tag">Norseman H420 — Standard Build</div>
+      <div class="pricing-main"><sup>$</sup>599,000</div>
+      <div class="pricing-config">Twin Mercury 300HP Outboard Configuration · USD · Ex-Factory</div>
+      <div class="pricing-includes">
+        <span>5083-H116 Aluminum Hull</span>
+        <span>Fly Bridge Deck</span>
+        <span>2 Cabins / 2 Heads</span>
+        <span>4-Zone AC System</span>
+        <span>LEWMAR® Bow Thruster</span>
+        <span>MASTERVOLT® Electrical System</span>
+        <span>Onan® 9kW Generator</span>
+        <span>Complete Navigation Lighting</span>
+      </div>
+      <p style="color:var(--silver);font-size:0.85rem;margin-bottom:30px">Factory can configure engines up to twin 425HP. Custom color and interior specification available. Registration, shipping, and import duties additional. Prices subject to confirmation.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a href="https://wa.me/971561018837?text=I%20would%20like%20to%20enquire%20about%20the%20Norseman%20H420%20%E2%80%94%20price%20%24599%2C000%20USD." class="btn btn-gold" target="_blank">
+          Enquire via WhatsApp
+        </a>
+        <a href="#contact" class="btn btn-outline">Submit Enquiry Form</a>
+      </div>
+    </div>
+    <p class="reveal" style="font-size:0.82rem;color:rgba(255,255,255,0.2);text-align:center;margin-top:16px">All specifications are provided in good faith based on factory documentation. Buyer is encouraged to conduct independent inspection and survey.</p>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-info reveal">
+      <div class="section-tag">Private Enquiry</div>
+      <h2>Reserve Your Consultation</h2>
+      <div class="gold-line"></div>
+      <p>Speak directly with our yacht consultants. We work with serious buyers globally — from first-time vessel acquisitions to experienced owners upgrading their fleet. No pressure, full discretion, professional guidance.</p>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📱</div>
+        <div class="contact-detail-text">
+          <strong>WhatsApp (Preferred)</strong>
+          Instant response during business hours · UAE & international
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">✉️</div>
+        <div class="contact-detail-text">
+          <strong>Email Enquiry</strong>
+          Full specification package, pricing, and factory brochure on request
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📍</div>
+        <div class="contact-detail-text">
+          <strong>New Yachting FZE LLC· Dubai, UAE</strong>
+          Luxury yacht brokerage & marine consulting for the Middle East & beyond
+        </div>
+      </div>
+      <a href="https://wa.me/971561018837?text=I%20am%20interested%20in%20the%20Norseman%20H420.%20Please%20contact%20me." class="btn btn-whatsapp" target="_blank" style="margin-top:20px">
+        <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat on WhatsApp Now
+      </a>
+    </div>
+    <div class="contact-form reveal reveal-delay-1">
+      <div class="form-title">Request Information · Norseman H420</div>
+      <form id="enquiry-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" name="phone" placeholder="+1 or +971..." required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Country / Location</label>
+            <input type="text" name="country" placeholder="UAE, USA, Europe...">
+          </div>
+          <div class="form-group">
+            <label>Budget Range</label>
+            <select name="budget">
+              <option value="">Select range</option>
+              <option>$599,000 (Standard Config)</option>
+              <option>$600,000 – $700,000 (Upgraded Engines)</option>
+              <option>$700,000+ (Full Custom)</option>
+              <option>Financing / Flexible</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Timeline to Purchase</label>
+          <select name="timeline">
+            <option value="">Select timeline</option>
+            <option>Immediate — ready to proceed</option>
+            <option>Within 3 months</option>
+            <option>Within 6 months</option>
+            <option>Researching / 12+ months</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message / Specific Requirements</label>
+          <textarea name="message" placeholder="Engine preference, delivery port, special requests, questions about the vessel..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Submit Private Enquiry →</button>
+        <p class="form-privacy">Your information is held in strict confidence. No spam, no third-party sharing. We will respond within 2 working days.</p>
+      </form>
+      <div class="success-msg" id="success-msg">
+        <h3>Enquiry Received</h3>
+        <p>Thank you. Our team will contact you within 2 working days. For immediate assistance, please WhatsApp us directly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">NORSEMAN H420 · Presented by New Yachting FZE LLC</div>
+  <p class="footer-sub" style="margin-top:8px">Dubai, UAE · Luxury Yacht Brokerage & Marine Consulting · navieryacht.com</p>
+  <p class="footer-sub" style="margin-top:6px">Specifications subject to factory confirmation. Price in USD. All rights reserved.</p>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<div id="wa-float">
+  <div class="wa-tooltip">Chat with us — H420 Enquiry</div>
+  <a href="https://wa.me/971501234567?text=I%20am%20interested%20in%20the%20Norseman%20H420." class="wa-btn" target="_blank" aria-label="WhatsApp Enquiry">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<!-- GALLERY LIGHTBOX -->
+<div id="gallery-lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close image preview">×</button>
+  <div class="lightbox-stage" id="lightbox-stage">
+    <img id="lightbox-image" alt="Gallery enlarged image" />
+  </div>
+  <div class="lightbox-controls">
+    <button class="lightbox-zoom" id="lightbox-zoom-out" aria-label="Zoom out">−</button>
+    <button class="lightbox-zoom" id="lightbox-zoom-in" aria-label="Zoom in">+</button>
+  </div>
+  <div class="lightbox-tip">Click image / Mouse wheel to zoom · Press Esc to close</div>
+</div>
+
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible') });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Nav scroll effect
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Form submit
+document.getElementById('enquiry-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const data = new FormData(this);
+  const name = data.get('name');
+  const phone = data.get('phone');
+  const email = data.get('email');
+  const msg = data.get('message') || 'No additional message.';
+  const waText = encodeURIComponent(`New H420 Enquiry from ${name}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${msg}`);
+  window.open(`https://wa.me/971561018837?text=${waText}`, '_blank');
+  this.style.display = 'none';
+  document.getElementById('success-msg').style.display = 'block';
+});
+
+// Gallery lightbox
+const lightbox = document.getElementById('gallery-lightbox');
+const lightboxImg = document.getElementById('lightbox-image');
+const lightboxStage = document.getElementById('lightbox-stage');
+const lightboxClose = document.getElementById('lightbox-close');
+const zoomInBtn = document.getElementById('lightbox-zoom-in');
+const zoomOutBtn = document.getElementById('lightbox-zoom-out');
+let lightboxScale = 1;
+let naturalW = 0;
+
+function applyLightboxZoom() {
+  if (!naturalW || lightboxScale <= 1) {
+    lightboxImg.style.width = '';
+    lightboxImg.style.maxWidth = '100%';
+    lightboxImg.style.maxHeight = '100%';
+    lightboxImg.classList.remove('zoomed');
+    lightboxScale = 1;
+    return;
+  }
+  lightboxImg.style.maxWidth = 'none';
+  lightboxImg.style.maxHeight = 'none';
+  lightboxImg.style.width = `${Math.round(naturalW * lightboxScale)}px`;
+  lightboxImg.classList.add('zoomed');
+}
+
+function openLightbox(src, alt) {
+  lightboxImg.src = src;
+  lightboxImg.alt = alt || 'Gallery image';
+  lightbox.classList.add('active');
+  lightbox.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  lightboxScale = 1;
+  lightboxStage.scrollTop = 0;
+  lightboxStage.scrollLeft = 0;
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('active');
+  lightbox.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+  lightboxImg.removeAttribute('src');
+  lightboxImg.style.width = '';
+  lightboxImg.classList.remove('zoomed');
+  lightboxScale = 1;
+}
+
+lightboxImg.addEventListener('load', () => {
+  naturalW = lightboxImg.naturalWidth || 0;
+  applyLightboxZoom();
+});
+
+document.querySelectorAll('#gallery .gallery-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const img = item.querySelector('img');
+    if (!img) return;
+    openLightbox(img.src, img.alt);
+  });
+});
+
+lightboxImg.addEventListener('click', () => {
+  lightboxScale = lightboxScale > 1 ? 1 : 2;
+  applyLightboxZoom();
+});
+
+lightboxStage.addEventListener('wheel', (e) => {
+  if (!lightbox.classList.contains('active')) return;
+  e.preventDefault();
+  const delta = e.deltaY > 0 ? -0.2 : 0.2;
+  lightboxScale = Math.min(4, Math.max(1, +(lightboxScale + delta).toFixed(2)));
+  applyLightboxZoom();
+}, { passive: false });
+
+zoomInBtn.addEventListener('click', () => {
+  lightboxScale = Math.min(4, +(lightboxScale + 0.25).toFixed(2));
+  applyLightboxZoom();
+});
+
+zoomOutBtn.addEventListener('click', () => {
+  lightboxScale = Math.max(1, +(lightboxScale - 0.25).toFixed(2));
+  applyLightboxZoom();
+});
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
+});
+
+// Smooth anchors
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if(target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>
+</body>
+</html>
