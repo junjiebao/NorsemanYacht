@@ -1,0 +1,9 @@
+---
+description: 
+alwaysApply: true
+enabled: true
+updatedAt: 2026-01-29T14:50:31.954Z
+provider: 
+---
+
+For the NorsemanYacht React project, ensure that all user-facing text in JSX, HTML, and configuration files is written in English. When adding or editing components in `src/pages`, `src/components`, or `public/index.html`, translate or replace any existing non-English (e.g., Chinese) copy with clear English copy that matches the brand tone (expedition, luxury, northern heritage). Avoid mixing languages within a single sentence or UI element.
